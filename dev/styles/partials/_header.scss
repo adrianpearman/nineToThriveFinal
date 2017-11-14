@@ -1,0 +1,142 @@
+
+
+.menu {
+  background: rgba(245,245,245,0.8);
+  padding: 0px 0 0px 0;
+  .fa-heart-o{
+    font-size: 2em;
+  }
+}
+.headerLogo img{
+  // max-width: 5%;
+  height: 60px;
+  padding: 15px 10px;
+}
+
+.gradient {
+  background: linear-gradient(45deg, darken(rgba(117,221,221,0.9), 30%), rgba(117,221,221,0.9));
+  color: white;
+  .nav li a {
+    color: $offWhite;
+  }
+}
+
+.nav {
+  display: flex;
+  list-style: none;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  transition:  ease-in-out 0.3s;
+  li {
+    margin-left: 25px;
+    a {
+      text-decoration: none;
+      color: $black;
+    }
+    a:hover{
+      color: darken($blue, 20%);
+    }
+  }
+}
+#bookNow {
+  background: $blue;
+  padding: 10px 15px 10px 15px;
+  border: 1px solid $blue;
+  border-radius: 25px;
+  a {
+    color: $offWhite;
+  }
+}
+#bookNow:hover{
+  background: $offWhite;
+  a {
+    color: $blue;
+  }
+}
+.navItem{
+  @media(max-width: 800px){
+    display: none;
+  }
+}
+i.burger {
+  display: none;
+  font-size: 2em;
+  @media(max-width: 800px){
+    display: flex;
+  }
+}
+
+.active{
+  transform: rotate(90deg);
+  transition: transform 0.3s;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.getStarted {
+  background: rgba(177,221,221,0.5);
+  color: $offWhite;
+  padding: 10px 15px 10px 15px;
+  border-radius: 25px;
+  border: 2px solid $offWhite;
+  margin-right: 25px;
+  margin-top: 50px;
+  text-align: center;
+}
+
+.getStarted:hover {
+  background: $offWhite;
+  color: $blue;
+}
+
+#plans {
+  background: transparent;
+}
+#plans:hover {
+  background: $blue;
+  color: $offWhite;
+}
+
+.hero {
+  // background: linear-gradient(45deg, darken(rgba(117,221,221,0.5), 30%), rgba(117,221,221,0.5)), url('/photos/laughing.jpg');
+  background: linear-gradient(45deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('/photos/laughing.jpg');
+  height: 85vh;
+  background-size: cover;
+  background-position: 50% 50%;
+  // text-align: center;
+  position: relative;
+}
+
+.heroText {
+  color: $offWhite;
+  font-size: 3em;
+  @media(max-width: 768px){
+    font-size: 1.5em;
+    // text-align: center;
+  }
+}
+
+.title {
+  position: absolute;
+  max-width: 50%;
+  top: 50%;
+  left: 12%;
+  transform: translateY(-50%);
+  h3 {
+    margin: 0;
+    font-size: 2em;
+    @media(max-width: 768px){
+      font-size: 1.0em;
+    }
+  }
+  // transform: translateX(-50%);
+}
+.blue {
+  color: $blue;
+}

@@ -1,0 +1,90 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Packages</title>
+  <link rel="stylesheet" href="public/styles/style.css">
+  <script src="https://use.fontawesome.com/de050f4e35.js"></script>
+  <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-108085543-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+gtag('config', 'UA-108085543-1');
+</script>
+</head>
+<body>
+  <header>
+    <div class="menu">
+      <div class="flexContainer wrapper">
+        <div class='headerLogo'>
+          <a href="index.html"><img src="photos/nineToThriveLogo.png" alt=""></a>
+        </div>
+        <ul class="nav">
+          <li class="navItem"><a href="index.html">HOME</a></li>
+          <li class="navItem"><a href="about.html">ABOUT</a></li>
+          <li class="navItem"><a href="packages.html">PACKAGES</a></li>
+          <li class="navItem"><a href="blog.html">BLOG</a></li>
+          <li><i class="fa fa-bars burger" aria-hidden="true"></i></li>
+        </ul>
+      </div>
+    </div>
+    <!-- <div class="packageHero">
+      <h2 class="titleText wrapper">LET'S GET STARTED!</h2>
+    </div> -->
+  </header>
+
+  <section class="bookNow">
+    <h2 class="mainText wrapper">
+      Book Your Event
+    </h2>
+    <p class="wrapper bookNowText"> Please tell us a bit about your event vision. Our team will get back to you within 24 hours to get the planning started! </p>
+    <div class="wrapper">
+      <form action="https://formspree.io/info@9tothrive.ca" method="POST" class="bookingInfo">
+        <input type="text" name="name" placeholder="Name">
+        <input type="email" name="email" placeholder="Email?">
+        <input type="text" name="company" placeholder="Company">
+        <input type="text" name="date" placeholder="Ideal date">
+        <input type="text" name='subject' placeholder="Subject">
+        <textarea name='message' placeholder="What package would you like?"></textarea></br>
+        <button class="packageChoice formButton" action='submit'>SEND</button>
+      </form>
+
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrapper footerFlexContainer">
+      <div class="aboutCompany footerChild">
+        <h2 class="footerHeading">About 9 to Thrive</h2>
+        <p class="footerText">We're a corporate wellness events company obsessed with delivering fun events to your office</p>
+        <ul class="footerSocial">
+          <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+          <li><a href="#"><i class='fa fa-instagram'></i></a></li>
+        </ul>
+      </div>
+      <div class="company footerChild">
+        <h2 class="footerHeading">Company</h2>
+        <ul class="footerLinks">
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a href="packages.html">PACKAGES</a></li>
+          <li><a href="blog.html">BLOG</a></li>
+        </ul>
+      </div>
+      <div class="contact footerChild">
+        <h2 class="footerHeading">Get In Touch</h2>
+        <ul class="footerLinks inTouch">
+          <!-- <li>123 Address Street</li> -->
+          <li>info@9tothrive.ca</li>
+          <!-- <li>(123).456.7891</li> -->
+        </ul>
+      </div>
+    </div>
+  </footer>
+<script src="public/scripts/main.js"></script>
+</body>

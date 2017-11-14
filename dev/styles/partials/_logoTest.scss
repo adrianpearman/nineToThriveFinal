@@ -1,0 +1,39 @@
+.logoTest {
+  background: $offWhite;
+  padding-top: $sectionMargin;
+  padding-bottom: $sectionMargin;
+  text-align: center;
+  h2 {
+    color: $blue;
+  }
+}
+
+ul.logos {
+  margin-top: $sectionMargin;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  list-style: none;
+  padding: 0;
+  li {
+    flex-basis: 25%;
+    @media(max-width: 768px){
+      flex-basis: 100%;
+      max-width: 80%;
+      margin: 0 auto;
+    }
+    max-width: 20%;
+  }
+
+  li i {
+    font-size: 2em;
+    color: $blue;
+  }
+}
+
+.blurb{
+  margin-bottom: 20px;
+  text-align: left;
+  font-size: 1.2em;
+  font-weight: 400;
+}

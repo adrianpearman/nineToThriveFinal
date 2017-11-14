@@ -1,0 +1,69 @@
+.about {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background: $offWhite;
+  text-align: center;
+}
+
+.aboutText {
+    max-width: 75%;
+    margin: 0 auto;
+}
+
+.aboutIcons {
+    padding: $sectionMargin 0 0 0;
+    list-style: none;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 70%;
+    margin: 0 auto;
+    li {
+      flex-basis: 20%;
+      max-width: 18%;
+      @media(max-width: 768px){
+        flex-basis: 100%;
+        max-width: 80%;
+        margin: 0 auto;
+        margin-bottom: 20px;
+        .fa-arrow-right {
+          transform: rotate(90deg);
+        }
+      }
+    }
+    li i {
+      font-size: 3em;
+      color: $blue;
+    }
+
+}
+
+.blurb {
+  max-width: 75%;
+  margin: 0 auto;
+}
+
+//// about page ///
+
+#aboutPackageHero {
+  background: linear-gradient(0deg, rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('/photos/pineapple-supply-co-279730.jpg');
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.aboutUs {
+  padding-top: $sectionMargin;
+  padding-bottom: $sectionMargin;
+  text-align: Left;
+  h2 {
+    margin-bottom: 40px;
+  }
+}
+.aboutUsChild {
+  flex-basis: 50%;
+  max-width: 45%;
+}
+.aboutPhoto img {
+  max-width: 100%;
+}

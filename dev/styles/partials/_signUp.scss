@@ -1,0 +1,134 @@
+.signUp {
+  padding-top: $sectionMargin;
+  padding-bottom: $sectionMargin;
+  background: linear-gradient(45deg, rgba(177,221,221,0.6), rgba(177,221,221,0.6)), url('/photos/hero2.jpeg');
+  background-size: cover;
+  background-position: 50% 50%;
+  text-align: left;
+  // filter:blur(3px);
+}
+
+.wrapper#mc_embed_signup {
+  background: rgba(117,221,221,0.8);
+  max-width: 50%;
+  h2{
+    color: $black;
+  }
+  @media(max-width: 768px){
+    max-width: 80%;
+  }
+  color: lightgrey;
+  form input{
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid $black;
+  }
+  label {
+    color: $black;
+  }
+}
+
+.clear {
+  max-width: 25%;
+  text-align: left;
+  input[type=submit].button{
+    border: none;
+    color: $black;
+  }
+}
+
+input#mc-embedded-subscribe.button {
+  color: $black;
+  background: $offWhite;
+  border: 2px solid $offWhite;
+}
+
+.indicates-required{
+  color: $black;
+}
+
+.form form {
+  input {
+    width: 75%;
+    color: $black;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid $black;
+    padding-top: 40px;
+    padding-left: 15px;
+    padding-bottom: 10px;
+  }
+  input::placeholder {
+    color: darken($offWhite, 5%);
+  }
+  textarea {
+    width: 75%;
+    padding-top: 40px;
+    padding-left: 15px;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid $offWhite;
+    color: $offWhite;
+  }
+  textarea::placeholder {
+    color: darken($offWhite, 5%);
+  }
+}
+.otherPart {
+  text-align: center;
+  color: $offWhite;
+  ul {
+    list-style: none;
+    display: flex;
+    flex-flow: row wrap;
+    padding: 0;
+    li {
+      padding-left: 40px;
+      font-size: 3em;
+    }
+    li a {
+      text-decoration: none;
+      color: $offWhite;
+    }
+  }
+}
+
+//BOOK NOW PAGE //
+
+textarea {
+  resize: none;
+}
+section.bookNow {
+  padding: $sectionMargin 0px $sectionMargin 0px;
+  text-align: center;
+  background: linear-gradient(45deg, rgba(149,96,177,0.7), rgba(117,221,221,0.7)), url('/photos/shoes.jpg');
+  background-size: cover;
+  height: 100vh;
+  color: $offWhite;
+}
+form.bookingInfo {
+  padding-top: $sectionMargin;
+}
+form.bookingInfo input{
+  border: none;
+  border-bottom: 2px solid $offWhite;
+  background: transparent;
+  width: 60%;
+  padding: 10px 5px 10px 5px;
+  color: $offWhite;
+}
+form.bookingInfo input::placeholder, textarea::placeholder{
+  color: $offWhite;
+}
+form.bookingInfo textarea{
+  border: none;
+  border-bottom: 2px solid $offWhite;
+  background: transparent;
+  width: 60%;
+  padding: 10px 5px 10px 5px;
+}
+
+.bookNowText {
+  max-width: 75%;
+  margin: 0 auto;
+}

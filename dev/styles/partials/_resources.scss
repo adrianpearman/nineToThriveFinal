@@ -1,0 +1,107 @@
+.resources {
+  text-align: center;
+  padding-top: $sectionMargin;
+  padding-bottom: $sectionMargin;
+}
+
+.blogPost {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  padding-top: 0;
+  // padding-bottom: 0;
+}
+.blogPostPhoto {
+  flex-basis: 50%;
+  width: 100%;
+  img{
+    max-width: 100%;
+    border-radius: 15px 15px 0 0;
+  }
+}
+
+//blog page//
+
+.packageHero--blog {
+  background: linear-gradient(0deg, rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('/photos/blogpost-10ksteps.jpg');
+  height: 36vh;
+  background-size: cover;
+  background-position: 40% 80%;
+  position: relative;
+  h2{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: $offWhite;
+    font-size: 3em;
+  }
+}
+
+.formButton {
+  margin-top: 40px;
+}
+
+.blogGoesHere {
+  text-align: center;
+  padding: $sectionMargin 0px $sectionMargin 0px;
+}
+
+.blogPageContent {
+  padding: $sectionMargin 0 $sectionMargin 0;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  border-bottom: 2px solid lighten($black, 70%);
+  max-width: 60%;
+  margin: 0 auto;
+  h2 {
+    text-align: center;
+  }
+}
+
+// .blogPageContent:hover {
+//   border-bottom: 2px solid lighten($black, 60%);
+// }
+.seeMore {
+  background: transparent;
+  border: none;
+  text-align: center;
+  font-family: 'Lato';
+  color: $black;
+}
+.less{
+  transform: rotate(180deg);
+}
+.notPreview{
+  display: none;
+}
+
+#reverse {
+  flex-flow: row-reverse wrap;
+}
+.blogPageChild {
+  flex-basis: 50%;
+  max-width: 45%;
+}
+.photoOnPage img{
+  flex-basis: 50%;
+  max-width: 100%;
+}
+.blogPostOnPage {
+  text-align: left;
+}
+.verticalFlex {
+  display: flex;
+  flex-flow: column;
+}
+
+#postOnBlogPage {
+  min-height: 700px;
+}
+
+
+img.photoOnPage {
+  max-width: 100%;
+  margin: 0 auto;
+}
